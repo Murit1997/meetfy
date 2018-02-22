@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../models/user';
-import{AngularFireAuth} from'angularfire2/auth';
+import{AngularFireAuth, AngularFireAuthModule} from'angularfire2/auth';
 
 /**
  * Generated class for the RegisterPage page.
@@ -22,7 +22,12 @@ user = {} as User;
   }
 
 async Register(user:User){
-   const result = this.afAuth.auth.createUserWithEmailAndPassword(user.email,user.password)
+  try{
+   const result =  await this.afAuth.auth.createUserWithEmailAndPassword(user.email,user.password)
  console.log(result)
   }
+  catch(e){
+    console.error(e);
+  }
+}
 }
