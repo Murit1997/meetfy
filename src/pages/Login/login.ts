@@ -28,10 +28,4 @@ export class LoginPage {
     this.navCtrl.push(HomePage);
   }
 }
-catch(e){
-  console.error(e);
-}
-async Register(){
-  await this.navCtrl.push(RegisterPage);
-}
 }

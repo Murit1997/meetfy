@@ -36,7 +36,7 @@ $app-direction: ltr;
 $colors: (
   primary:    #86D1EB,
   secondary:  #32db64,
-  danger:     #f53d3d,
+  danger:     #F48B8A,
   light:      #f4f4f4,
   dark:       #222
 );
@@ -86,3 +86,16 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+$background-ios-color: #85D0EC;
+$background-md-color:#85D0EC;
+$background-wp-color: #85D0EC;
+ion-item {
+  border-radius: 25px !important;
+  padding-left: 30px !important;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-bottom: 0px !important;
+  box-shadow: none !important;
+}
+
