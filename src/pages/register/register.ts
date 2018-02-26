@@ -29,5 +29,6 @@ async Register(user:User){
   catch(e){
     console.error(e);
   }
+
 }
 }

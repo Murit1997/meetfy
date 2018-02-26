@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,ToastController } from 'ionic-angular';
 import { User } from '../../models/user';
 import{AngularFireAuth, AngularFireAuthModule} from'angularfire2/auth';
 import { RegisterPage } from '../register/register';
@@ -19,7 +19,7 @@ import { HomePage} from '../home/home';
 export class LoginPage {
   user ={} as User;
   constructor( private afAuth: AngularFireAuth ,
-  public navCtrl: NavController, public navParams: NavParams) {
+  public navCtrl: NavController, public navParams: NavParams,) {
   }
  async login(user:User){
   const result = this.afAuth.auth.signInWithEmailAndPassword(user.email,user.password);
@@ -28,4 +28,8 @@ export class LoginPage {
     this.navCtrl.push(HomePage);
   }
 }
+async register(){
+  this.navCtrl.push(RegisterPage); 
 }
+}
+
