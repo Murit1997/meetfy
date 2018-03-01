@@ -9,9 +9,12 @@
   <ion-navbar>
     <ion-title>Register</ion-title>
   </ion-navbar>
-
 </ion-header>
 <ion-content padding>
+    <div class="imgdiv">
+        <img src="assets/imgs/LOGO_MEETFY-3.png" height="auto" width="90" class ="center">
+          <img src="assets/imgs/foto_text.png" height="auto" width="150" class = "center">
+      </div>
  <div class="textlabel">
   <ion-item>
     <ion-input type="text" placeholder="Nombre" [(ngModel)]="user.Name"></ion-input>
@@ -47,6 +50,7 @@
       <ion-input type="text" placeholder="Ciudad"[(ngModel)]="user.City"></ion-input> 
   </ion-item>
 </div>
-  <button round color ="light" ion-button (click)='Register(user);'>Personalizate</button>
-  
+<div class="buttondiv">
+  <button round color ="light" ion-button (click)='Register(user);'><p class="buttoncolor">Personalizate</p></button>
+  </div>
 </ion-content>

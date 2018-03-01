@@ -1,3 +1,28 @@
 page-register {
-
+    .item.item-input {
+        background-color:#F48B8A;
+      }
+      .center1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+      }
+      .buttondiv{
+          text-align: center;
+      }
+      .text-input::-moz-placeholder {
+        color: white;
+        
+      }
+      
+      .text-input:-ms-input-placeholder {
+        color: white;
+      }
+      
+      .text-input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: white;
+      }
+      
 }
