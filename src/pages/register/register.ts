@@ -1,7 +1,13 @@
+import { LoginPage } from './../Login/login';
+import { Profile } from './../../models/Profile';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../models/user';
 import{AngularFireAuth, AngularFireAuthModule} from'angularfire2/auth';
+import { auth } from 'firebase/app';
+import { Observable } from 'rxjs/Observable';
+
 
 /**
  * Generated class for the RegisterPage page.
@@ -17,13 +23,16 @@ import{AngularFireAuth, AngularFireAuthModule} from'angularfire2/auth';
 })
 export class RegisterPage {
 user = {} as User;
+Profile = {} as Profile
 
-  constructor(private  afAuth:AngularFireAuth,navCtrl: NavController, public navParams: NavParams) {
+  constructor(private  afAuth:AngularFireAuth,navCtrl: NavController, public navParams: NavParams , private  afDatabase:AngularFireDatabaseModule) {
   }
 
-async Register(user:User){
+async Register(user:User,Profile:Profile){
   try{
    const result =  await this.afAuth.auth.createUserWithEmailAndPassword(user.email,user.password)
+   this.afAuth.authState.subscribe(auth => 
+    {this.afDatabase.list(`profile/${auth.uid}`).push(this.Profile)
  console.log(result)
   }
   catch(e){
