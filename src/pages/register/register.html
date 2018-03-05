@@ -11,45 +11,30 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-    <div class="imgdiv">
-        <img src="assets/imgs/LOGO_MEETFY-3.png" height="auto" width="90" class ="center">
+    <div float-left margin-left:30px>
+        <img src="assets/imgs/LOGO_MEETFY-3.png" height="auto" width="79" class ="center">
+    </div>
+    <div float-left margin-top>
           <img src="assets/imgs/foto_text.png" height="auto" width="150" class = "center">
-      </div>
- <div class="textlabel">
-  <ion-item>
-    <ion-input type="text" placeholder="Nombre" [(ngModel)]="Profile.Name"></ion-input>
-  </ion-item>
-</div>
-<div class="textlabel">
-  <ion-item>
-      <ion-input type="text" placeholder="Nombre de usuario" [(ngModel)]="Profile.user"></ion-input> 
-  </ion-item>
-</div>
-<div class="textlabel">
+        </div>
+      <div float-left margin-left margin-top text-center>
+      <p class="textcolor">Cuestionario de registro: </p>
+    </div>
+<div class="textlabel" margin-left>
   <ion-item>
       <ion-input type="text" placeholder="E-mail"[(ngModel)]="user.email"></ion-input> 
   </ion-item>
   </div>
-  <div class="textlabel">
-  <ion-item>
+  <div class="textlabel" margin-left>
+  <ion-item center>
       <ion-input type="password" placeholder="Contraseña"[(ngModel)]="user.password"></ion-input> 
   </ion-item>
   </div>
-  <div class="textlabel">
-  <ion-item>
-      <ion-input type="text" placeholder="Repite Contraseña"[(ngModel)]="user.password"></ion-input> 
+  <div class="textlabel" margin-left>
+  <ion-item center>
+      <ion-input type="password" placeholder="Repite Contraseña"[(ngModel)]="user.password"></ion-input> 
   </ion-item>
   </div>
-  <div class="textlabel">
-  <ion-item>
-      <ion-input type="text" placeholder="Sexo"[(ngModel)]="Profile.Sex"></ion-input> 
-  </ion-item>
-  </div>
-  <div class="textlabel">
-  <ion-item>
-      <ion-input type="text" placeholder="Ciudad"[(ngModel)]="Profile.City"></ion-input> 
-  </ion-item>
-</div>
 <div class="buttondiv">
   <button round color ="light" ion-button (click)='Register(user);'><p class="buttoncolor">Personalizate</p></button>
   </div>

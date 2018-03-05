@@ -23,16 +23,12 @@ import { Observable } from 'rxjs/Observable';
 })
 export class RegisterPage {
 user = {} as User;
-Profile = {} as Profile
-
   constructor(private  afAuth:AngularFireAuth,navCtrl: NavController, public navParams: NavParams , private  afDatabase:AngularFireDatabaseModule) {
   }
 
-async Register(user:User,Profile:Profile){
+async Register(user:User){
   try{
    const result =  await this.afAuth.auth.createUserWithEmailAndPassword(user.email,user.password)
-   this.afAuth.authState.subscribe(auth => 
-    {this.afDatabase.list(`profile/${auth.uid}`).push(this.Profile)
  console.log(result)
   }
   catch(e){

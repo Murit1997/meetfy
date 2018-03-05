@@ -12,7 +12,7 @@
 
 
 <ion-content padding>
-  <div class="imgdiv">
+  <div class="imgdiv" >
     <img src="assets/imgs/LOGO_MEETFY-3.png" height="100" width="100" class ="center">
     <img src="assets/imgs/foto_text.png" height="60" width="200" class = "center">
   </div>
@@ -24,10 +24,11 @@
   <ion-item>
       <ion-input type="password"placeholder="Contraseña"[(ngModel)]="user.password"></ion-input> 
   </ion-item>
-  <div class="button">
-<button ion-button round color ="danger" (click)='login(user);'>Continua la experiencia meetfy</button>
-</div>
-<button ion-button round color ="danger" (click)='register();'>register</button>
+  <div  margin-top class="buttons">
+    <button ion-button round color ="danger" (click)='login(user);'>Continua la experiencia meetfy</button>
+    <button text-center center margin ion-button round color ="danger" (click)='register();'>register</button>
+  </div>
+
 </ion-content>
 
 
