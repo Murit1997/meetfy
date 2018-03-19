@@ -11,7 +11,7 @@ import { LoginPage } from '../pages/Login/login';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SocialloginPage;
+  rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

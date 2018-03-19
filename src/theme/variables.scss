@@ -35,10 +35,11 @@ $app-direction: ltr;
 
 $colors: (
   primary:    #86D1EB,
-  secondary:  #32db64,
+  secondary:  #0F66C8,
   danger:     #F48B8A,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  facebook : #EF412E
 );
 
 
@@ -105,7 +106,7 @@ ion-item {
 }
 
 .button{
-  margin-top:65px;
+  margin-top:67px;
 }
 .textlabel{
   margin-bottom:10px;
@@ -121,4 +122,7 @@ ion-item {
 }
 .loginpage{
   margin-bottom:50px; 
+}
+.buttons{
+  margin-top:80px;
 }
