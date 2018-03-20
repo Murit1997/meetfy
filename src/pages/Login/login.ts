@@ -1,9 +1,9 @@
+import { MainpagePage } from './../mainpage/mainpage';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ToastController } from 'ionic-angular';
 import { User } from '../../models/user';
 import{AngularFireAuth, AngularFireAuthModule} from'angularfire2/auth';
 import { RegisterPage } from '../register/register';
-import { HomePage} from '../home/home';
 /**
  * Generated class for the LoginPage page.
  *
@@ -26,7 +26,7 @@ export class LoginPage {
 
   console.log(result);
   if(result){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(MainpagePage);
   }
 }
 async register(){
