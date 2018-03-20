@@ -1,3 +1,4 @@
+import { LoginPage } from './../Login/login';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Facebook } from '@ionic-native/facebook';
@@ -30,6 +31,10 @@ export class SocialloginPage {
           });
   
       }).catch((error) => { console.log(error) });
+
+  }
+  LoginPage(){
+    this.navCtrl.push(LoginPage)
   }
 
   ionViewDidLoad() {

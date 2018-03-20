@@ -1,3 +1,4 @@
+import { RegisterPage } from './../pages/register/register';
 import { SocialloginPage } from './../pages/sociallogin/sociallogin';
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
@@ -11,7 +12,7 @@ import { LoginPage } from '../pages/Login/login';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  rootPage:any =SocialloginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
