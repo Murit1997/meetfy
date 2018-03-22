@@ -1,3 +1,4 @@
+import { EventpagePage } from './../eventpage/eventpage';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -17,9 +18,8 @@ export class MainpagePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainpagePage');
   }
-
 }
+

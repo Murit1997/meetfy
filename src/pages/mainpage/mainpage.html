@@ -9,8 +9,35 @@
   <ion-navbar>
     <ion-title>mainpage</ion-title>
   </ion-navbar>
-
 </ion-header>
+<ion-menu [content]="menu">
 <ion-content padding>
-<p>¿Que quieres hacer hoy?</p>
+  <div>
+<p style="text-align:center;font-size:160%;color:white;">¿Que quieres hacer hoy?</p>
+</div>
+<div>
+    <img src="assets/icon/movie.png"ng-click="eventpage()"height="70" width="70" style="margin-left:23px;">
+    <img src="assets/icon/producción.png"ng-click="eventpage()"height="70" width="70" style="margin-left:15px;">
+    <img src="assets/icon/pc.png"ng-click="eventpage()"height="70" width="70" style="margin-left:15px;">
+</div>
+<div class="img">
+    <img src="assets/icon/ciencias.png"ng-click="eventpage()"height="70" width="70" style="margin-left:23px;">
+    <img src="assets/icon/mapa.png"height="70"ng-click="eventpage()" width="70" style="margin-left:15px;">
+    <img src="assets/icon/compras.png"ng-click="eventpage()" height="70" width="70" style="margin-left:15px;">
+</div>
+<div class="img">
+  <img src="assets/imgs/LOGO_MEETFY-3.png"height="70" width="70" style="margin-left:100px;">
+</div>
+<div class="img">
+<img src="assets/icon/nieve.png"ng-click="eventpage()"height="70" width="70" style="margin-left:23px;">
+<img src="assets/icon/copas.png"ng-click="eventpage()"height="70" width="70" style="margin-left:15px;">
+<img src="assets/icon/juego.png" ng-click="eventpage()"height="70" width="70" style="margin-left:15px;">
+</div>
+<div class="img">
+    <img src="assets/icon/sexo.png" ng-click="eventpage()"height="70" width="70" style="margin-left:23px;">
+    <img src="assets/icon/dibujo.png" ng-click="eventpage()"height="70" width="70" style="margin-left:15px;">
+    <img src="assets/icon/costa.png" ng-click="eventpage()"height="70" width="70" style="margin-left:15px;">
+    </div>
 </ion-content>
+</ion-menu>
+<ion-nav #menu [root]="rootPage"></ion-nav>

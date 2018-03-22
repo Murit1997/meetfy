@@ -7,11 +7,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http'
 import { HttpModule } from '@angular/http';
 import { LoginPage } from '../pages/Login/login';
+import { MainpagePage } from '../pages/mainpage/mainpage';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any =SocialloginPage;
+  rootPage:any = MainpagePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
