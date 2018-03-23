@@ -1,1 +1,10 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu side="left" [content]="menulateral">
+    <ion-content >
+      <ion-list>
+    <button  ion-button round color ="danger"  margin-left (click)='logout();'>Salir</button>
+     <p>buscar</p>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+<ion-nav #menulateral [root]="rootPage"></ion-nav>

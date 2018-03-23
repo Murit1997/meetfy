@@ -1,3 +1,4 @@
+
 import { RegisterPage } from './../pages/register/register';
 import { SocialloginPage } from './../pages/sociallogin/sociallogin';
 import { Component } from '@angular/core';
@@ -12,7 +13,7 @@ import { MainpagePage } from '../pages/mainpage/mainpage';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = MainpagePage;
+  rootPage = MainpagePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -21,6 +22,11 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+  }
+  logout(){
+    console.log("Logout");
+    //this.authService.logout();
+    this.menuCtrl.close();   
   }
 }
 

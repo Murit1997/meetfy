@@ -5,13 +5,14 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
+      <button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
     <ion-title>mainpage</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-menu [content]="menu">
-<ion-content padding>
+<ion-content overflow-scroll="false">
   <div>
 <p style="text-align:center;font-size:160%;color:white;">¿Que quieres hacer hoy?</p>
 </div>
@@ -39,5 +40,3 @@
     <img src="assets/icon/costa.png" ng-click="eventpage()"height="70" width="70" style="margin-left:15px;">
     </div>
 </ion-content>
-</ion-menu>
-<ion-nav #menu [root]="rootPage"></ion-nav>
