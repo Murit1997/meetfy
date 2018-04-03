@@ -9,13 +9,14 @@ import { HttpClientModule } from '@angular/common/http'
 import { HttpModule } from '@angular/http';
 import { LoginPage } from '../pages/Login/login';
 import { MainpagePage } from '../pages/mainpage/mainpage';
+import {App} from 'ionic-angular';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage = MainpagePage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -25,8 +26,9 @@ export class MyApp {
   }
   logout(){
     console.log("Logout");
-    //this.authService.logout();
-    this.menuCtrl.close();   
+    this.app.getRootNav().setRoot(LoginPage);
+
+}  
   }
-}
+
 
