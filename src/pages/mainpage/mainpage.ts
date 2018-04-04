@@ -1,3 +1,5 @@
+import { MusicPage } from './../Activities/music/music';
+import { MoviePage } from './../Activities/movie/movie';
 
 import { EventpagePage } from './../eventpage/eventpage';
 import { Component } from '@angular/core';
@@ -17,7 +19,20 @@ import { MenuController } from 'ionic-angular';
   templateUrl: 'mainpage.html',
 })
 export class MainpagePage {
+  pagina:number;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl: MenuController) {
     }
+    eventpage(pagina){
+      if(pagina=1){
+        this.navCtrl.push(MoviePage);
+      }else if(pagina=2){
+        this.navCtrl.push(MusicPage);
+      }else{
+        
+      }
+    }
 }
+
+
 
