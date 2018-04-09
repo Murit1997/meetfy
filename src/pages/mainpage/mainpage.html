@@ -6,9 +6,6 @@
 -->
 <ion-header>
   <ion-navbar>
-      <button menuToggle>
-          <ion-icon name="menu"></ion-icon>
-        </button>
     <ion-title>mainpage</ion-title>
   </ion-navbar>
 </ion-header>
@@ -17,26 +14,51 @@
 <p style="text-align:center;font-size:160%;color:white;">¿Que quieres hacer hoy?</p>
 </div>
 <div>
-    <img src="assets/icon/movie.png"ng-click="eventpage(1)"height="70" width="70" style="margin-left:23px;">
-    <img src="assets/icon/producción.png"ng-click="eventpage(2)"height="70" width="70" style="margin-left:15px;">
-    <img src="assets/icon/pc.png"ng-click="eventpage(3)"height="70" width="70" style="margin-left:15px;">
+    <button (click)="eventpage(1)"  class="background">
+    <img src="assets/icon/movie.png"height="70" width="70" style="margin-left:23px;">
+    </button>
+    <button  (click)="eventpage(2)"  class="background">
+    <img src="assets/icon/producción.png"height="70" width="70" style="margin-left:15px;">
+    </button>
+    <button  (click)="eventpage(3)"  class="background">
+    <img src="assets/icon/pc.png"height="70" width="70" style="margin-left:15px;">
+  </button>
 </div>
 <div class="img">
-    <img src="assets/icon/ciencias.png"ng-click="eventpage(4)"height="70" width="70" style="margin-left:23px;">
-    <img src="assets/icon/mapa.png"height="70"ng-click="eventpage(5)" width="70" style="margin-left:15px;">
-    <img src="assets/icon/compras.png"ng-click="eventpage(6)" height="70" width="70" style="margin-left:15px;">
+  <button (click)="eventpage(4)"  class="background">
+    <img src="assets/icon/ciencias.png"height="70" width="70" style="margin-left:23px;">
+  </button>
+  <button (click)="eventpage(5)"  class="background">
+    <img src="assets/icon/mapa.png"height="70" width="70" style="margin-left:15px;">
+  </button>
+  <button (click)="eventpage(6)"  class="background">
+    <img src="assets/icon/compras.png" height="70" width="70" style="margin-left:15px;">
+    </button>
 </div>
 <div class="img">
-  <img src="assets/imgs/LOGO_MEETFY-3.png"height="70" width="70" style="margin-left:100px;">
+  <img src="assets/imgs/LOGO_MEETFY-3.png"height="70" width="70" style="margin-left:133px;">
+  </div>
+
+<div class="img">
+    <button (click)="eventpage(7)" class="background">
+<img src="assets/icon/nieve.png"height="70" width="70" style="margin-left:23px;">
+</button>
+<button (click)="eventpage(8)"  class="background">
+<img src="assets/icon/copas.png"height="70" width="70" style="margin-left:15px;">
+</button>
+<button (click)="eventpage(9)"  class="background">
+<img src="assets/icon/juego.png"height="70" width="70" style="margin-left:15px;">
+</button>
 </div>
 <div class="img">
-<img src="assets/icon/nieve.png"ng-click="eventpage(7)"height="70" width="70" style="margin-left:23px;">
-<img src="assets/icon/copas.png"ng-click="eventpage(8)"height="70" width="70" style="margin-left:15px;">
-<img src="assets/icon/juego.png" ng-click="eventpage(9)"height="70" width="70" style="margin-left:15px;">
-</div>
-<div class="img">
-    <img src="assets/icon/sexo.png" ng-click="eventpage(10)"height="70" width="70" style="margin-left:23px;">
-    <img src="assets/icon/dibujo.png" ng-click="eventpage(11)"height="70" width="70" style="margin-left:15px;">
-    <img src="assets/icon/costa.png" ng-click="eventpage(12)"height="70" width="70" style="margin-left:15px;">
+<button (click)="eventpage(10)"  class="background">
+    <img src="assets/icon/sexo.png"height="70" width="70" style="margin-left:23px;">
+</button>
+<button (click)="eventpage(11)"  class="background">
+    <img src="assets/icon/dibujo.png" height="70" width="70" style="margin-left:15px;">
+</button>
+<button (click)="eventpage(12)"  class="background">
+    <img src="assets/icon/costa.png" height="70" width="70" style="margin-left:15px;">
+    </button>
     </div>
 </ion-content>

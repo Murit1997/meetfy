@@ -4,7 +4,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../models/user';
-import{AngularFireAuth, AngularFireAuthModule} from'angularfire2/auth';
+import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
 import { auth } from 'firebase/app';
 import { Observable } from 'rxjs/Observable';
 
@@ -22,18 +22,18 @@ import { Observable } from 'rxjs/Observable';
   templateUrl: 'register.html',
 })
 export class RegisterPage {
-user = {} as User;
-  constructor(private  afAuth:AngularFireAuth,navCtrl: NavController, public navParams: NavParams , private  afDatabase:AngularFireDatabaseModule) {
+  user = {} as User;
+  constructor(private afAuth: AngularFireAuth, navCtrl: NavController, public navParams: NavParams, private afDatabase: AngularFireDatabaseModule) {
   }
 
-async Register(user:User){
-  try{
-   const result =  await this.afAuth.auth.createUserWithEmailAndPassword(user.email,user.password)
- console.log(result)
-  }
-  catch(e){
-    console.error(e);
-  }
+  async Register(user: User) {
+    try {
+      const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password)
+      console.log(result)
+    }
+    catch (e) {
+      console.error(e);
+    }
 
-}
+  }
 }

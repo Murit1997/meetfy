@@ -6,29 +6,27 @@
 -->
 <ion-header>
   <ion-navbar>
-      <ion-title>Login</ion-title>
+    <ion-title>Login</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-  <div class="imgdiv" >
-    <img src="assets/imgs/LOGO_MEETFY-3.png" height="100" width="100" class ="center">
-    <img src="assets/imgs/foto_text.png" height="60" width="200" class = "center">
+  <div class="imgdiv">
+    <img src="assets/imgs/LOGO_MEETFY-3.png" height="100" width="100" class="center">
+    <img src="assets/imgs/foto_text.png" height="60" width="200" class="center">
   </div>
   <div class="textlabel">
-  <ion-item>
-    <ion-input type="text" placeholder="Correo electronico"[(ngModel)]="user.email"></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Correo electronico" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
   </div>
   <ion-item>
-      <ion-input type="password"placeholder="Contraseña"[(ngModel)]="user.password"></ion-input> 
+    <ion-input type="password" placeholder="Contraseña" [(ngModel)]="user.password"></ion-input>
   </ion-item>
-  <div  margin-top class="buttons">
-    <button ion-button round color ="danger" (click)='login(user);'>Continua la experiencia meetfy</button>
-    <button text-center center margin ion-button round color ="danger" (click)='register();'>register</button>
+  <div margin-top class="buttons">
+    <button ion-button round color="danger" (click)='login(user);'>Continua la experiencia meetfy</button>
+    <button text-center center margin ion-button round color="danger" (click)='register();'>register</button>
   </div>
 
 </ion-content>
-
-

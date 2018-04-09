@@ -1,3 +1,4 @@
+import { MoviePage } from './../pages/Activities/movie/movie';
 
 import { RegisterPage } from './../pages/register/register';
 import { SocialloginPage } from './../pages/sociallogin/sociallogin';
@@ -26,8 +27,7 @@ export class MyApp {
   }
   logout(){
     console.log("Logout");
-    this.app.getRootNav().setRoot(LoginPage);
-
+    this.app.getRootNav().setRoot(MoviePage);
 }  
   }
 

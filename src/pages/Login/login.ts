@@ -1,8 +1,8 @@
 import { MainpagePage } from './../mainpage/mainpage';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { User } from '../../models/user';
-import{AngularFireAuth, AngularFireAuthModule} from'angularfire2/auth';
+import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
 import { RegisterPage } from '../register/register';
 /**
  * Generated class for the LoginPage page.
@@ -17,20 +17,20 @@ import { RegisterPage } from '../register/register';
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  user ={} as User;
-  constructor( private afAuth: AngularFireAuth ,
-  public navCtrl: NavController, public navParams: NavParams,) {
+  user = {} as User;
+  constructor(private afAuth: AngularFireAuth,
+    public navCtrl: NavController, public navParams: NavParams, ) {
   }
- async login(user:User){
-  const result = this.afAuth.auth.signInWithEmailAndPassword(user.email,user.password);
+  async login(user: User) {
+    const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
 
-  console.log(result);
-  if(result){
-    this.navCtrl.push(MainpagePage);
+    console.log(result);
+    if (result) {
+      this.navCtrl.push(MainpagePage);
+    }
   }
-}
-async register(){
-  this.navCtrl.push(RegisterPage); 
-}
+  async register() {
+    this.navCtrl.push(RegisterPage);
+  }
 }
 
