@@ -25,6 +25,7 @@ import { MusicPage } from '../pages/Activities/music/music';
 import { MoviePage } from '../pages/Activities/movie/movie';
 import { SnowPage } from '../pages/Activities/snow/snow';
 import { SummerPage } from '../pages/Activities/summer/summer';
+import { GoogleMaps } from '@ionic-native/google-maps';
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import { SummerPage } from '../pages/Activities/summer/summer';
     StatusBar,
     SplashScreen,
     Facebook,
+    GoogleMaps,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -9,5 +9,6 @@ import { MoviePage } from './movie';
   imports: [
     IonicPageModule.forChild(MoviePage),
   ],
+
 })
 export class MoviePageModule {}
