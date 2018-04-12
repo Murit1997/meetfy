@@ -1,6 +1,6 @@
 export interface Profile{
     Name:String;
-    user:String;
+    User:String;
     Sex:String;
     City:String;
 }

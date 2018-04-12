@@ -1,3 +1,5 @@
+
+import { RegisterPage } from './../register/register';
 import { WritePage } from './../Activities/write/write';
 import { SummerPage } from './../Activities/summer/summer';
 import { SnowPage } from './../Activities/snow/snow';
@@ -26,8 +28,10 @@ import { MenuController } from 'ionic-angular';
   selector: 'page-mainpage',
   templateUrl: 'mainpage.html',
 })
+
 export class MainpagePage {
 
+public profile
   constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
   }
   async eventpage(pagina: number) {

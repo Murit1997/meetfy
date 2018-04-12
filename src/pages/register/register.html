@@ -21,6 +21,16 @@
     <p class="textcolor">Cuestionario de registro: </p>
   </div>
   <div class="textlabel" margin-left>
+      <ion-item>
+        <ion-input type="text" placeholder="Nombre" [(ngModel)]="profile.Name"></ion-input>
+      </ion-item>
+    </div>
+    <div class="textlabel" margin-left>
+        <ion-item>
+          <ion-input type="text" placeholder="Nombre de Usuario" [(ngModel)]="profile.User"></ion-input>
+        </ion-item>
+      </div>
+  <div class="textlabel" margin-left>
     <ion-item>
       <ion-input type="text" placeholder="E-mail" [(ngModel)]="user.email"></ion-input>
     </ion-item>
@@ -35,6 +45,16 @@
       <ion-input type="password" placeholder="Repite Contraseña" [(ngModel)]="user.password"></ion-input>
     </ion-item>
   </div>
+  <div class="textlabel" margin-left>
+      <ion-item>
+        <ion-input type="text" placeholder="sexo" [(ngModel)]="profile.Sex"></ion-input>
+      </ion-item>
+    </div>
+    <div class="textlabel" margin-left>
+        <ion-item>
+          <ion-input type="text" placeholder="sexo" [(ngModel)]="profile.City"></ion-input>
+        </ion-item>
+      </div>
   <div class="buttondiv">
     <button round color="light" ion-button (click)='Register(user);'>
       <p class="buttoncolor">Personalizate</p>
