@@ -7,6 +7,8 @@ import { User } from '../../models/user';
 import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
 import { auth } from 'firebase/app';
 import { Observable } from 'rxjs/Observable';
+import {AngularFireDatabase} from'angularfire2/database';
+import { Subscriber } from 'rxjs/Subscriber';
 
 
 /**
@@ -23,16 +25,19 @@ import { Observable } from 'rxjs/Observable';
 })
 export class RegisterPage {
   user = {} as User;
-  profile = {} as Profile;
-  constructor(private afAuth: AngularFireAuth, navCtrl: NavController, public navParams: NavParams, private afDatabase: AngularFireDatabaseModule) {
-  }
+  arrData = []
+  constructor(private afAuth: AngularFireAuth, navCtrl: NavController, public navParams: NavParams, private afDatabase: AngularFireDatabaseModule,private fdb:AngularFireDatabase) {
+    this.fdb.list("/profile/").valueChanges()
+    .subscribe(data=>{
+      this.arrData =data;},
+      console.log(this.arrData))
+    }
 
   async Register(user: User,profile:Profile) {
     try {
       const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password)
-      console.log(result)
-    }
-    catch (e) {
+
+      }catch (e) {
       console.error(e);
     }
   }
