@@ -23,22 +23,19 @@ import { Subscriber } from 'rxjs/Subscriber';
   selector: 'page-register',
   templateUrl: 'register.html',
 })
+
+
 export class RegisterPage {
   user = {} as User;
-  arrData = []
-  constructor(private afAuth: AngularFireAuth, navCtrl: NavController, public navParams: NavParams, private afDatabase: AngularFireDatabaseModule,private fdb:AngularFireDatabase) {
-    this.fdb.list("/profile/").valueChanges()
-    .subscribe(data=>{
-      this.arrData =data;},
-      console.log(this.arrData))
+  profile = {} as Profile;
+  constructor(private afAuth: AngularFireAuth, navCtrl: NavController, public navParams: NavParams, private afDatabase: AngularFireDatabaseModule,private fdb:AngularFireDatabase,profile) {
     }
-
-  async Register(user: User,profile:Profile) {
+  async Register(user: User) {
     try {
       const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password)
-
       }catch (e) {
       console.error(e);
     }
   }
 }
+

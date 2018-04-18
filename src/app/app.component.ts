@@ -1,3 +1,4 @@
+import { LoginPage } from './../pages/Login/login';
 import { MoviePage } from './../pages/Activities/movie/movie';
 
 import { RegisterPage } from './../pages/register/register';
@@ -8,14 +9,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http'
 import { HttpModule } from '@angular/http';
-import { LoginPage } from '../pages/Login/login';
 import { MainpagePage } from '../pages/mainpage/mainpage';
 import {App} from 'ionic-angular';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = MainpagePage;
+  rootPage = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {
