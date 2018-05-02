@@ -85,4 +85,10 @@
         <variable name="APP_ID" value="152047932165357" />
         <variable name="APP_NAME" value="meetfy" />
     </plugin>
+    <plugin name="cordova-plugin-googlemaps" spec="dummy">
+        <variable name="API_KEY_FOR_ANDROID" value="(API_KEY_FOR_ANDROID)" />
+        <variable name="API_KEY_FOR_IOS" value="(API_KEY_FOR_IOS)" />
+    </plugin>
+    <allow-navigation href="http://172.27.147.225:8100" />
+    <engine name="android" spec="7.0.0" />
 </widget>
