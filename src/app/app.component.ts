@@ -16,7 +16,7 @@ import { PersonalityPage } from '../pages/personality/personality';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = RegisterPage;
+  rootPage = PersonalityPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {
