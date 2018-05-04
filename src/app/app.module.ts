@@ -26,6 +26,7 @@ import { MoviePage } from '../pages/Activities/movie/movie';
 import { SnowPage } from '../pages/Activities/snow/snow';
 import { SummerPage } from '../pages/Activities/summer/summer';
 import { GoogleMaps } from '@ionic-native/google-maps';
+import { PersonalityPage } from '../pages/personality/personality';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     SexPage,
     SnowPage,
     SummerPage,
-    CiencePage
+    CiencePage,
+    PersonalityPage
   ],
   imports: [
     BrowserModule,
@@ -73,7 +75,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     SexPage,
     SnowPage,
     SummerPage,
-    CiencePage
+    CiencePage,
+    PersonalityPage
   ],
   providers: [
     StatusBar,

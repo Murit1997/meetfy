@@ -11,11 +11,12 @@ import { HttpClientModule } from '@angular/common/http'
 import { HttpModule } from '@angular/http';
 import { MainpagePage } from '../pages/mainpage/mainpage';
 import {App} from 'ionic-angular';
+import { PersonalityPage } from '../pages/personality/personality';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = LoginPage;
+  rootPage = RegisterPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {

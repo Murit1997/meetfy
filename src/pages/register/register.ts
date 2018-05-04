@@ -9,6 +9,7 @@ import { auth } from 'firebase/app';
 import { Observable } from 'rxjs/Observable';
 import {AngularFireDatabase} from'angularfire2/database';
 import { Subscriber } from 'rxjs/Subscriber';
+import { PersonalityPage } from '../personality/personality';
 
 
 /**
@@ -28,11 +29,12 @@ import { Subscriber } from 'rxjs/Subscriber';
 export class RegisterPage {
   user = {} as User;
   profile = {} as Profile;
-  constructor(private afAuth: AngularFireAuth, navCtrl: NavController, public navParams: NavParams, private afDatabase: AngularFireDatabaseModule,private fdb:AngularFireDatabase,profile) {
+  constructor(private afAuth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams, private afDatabase: AngularFireDatabaseModule,private fdb:AngularFireDatabase) {
     }
   async Register(user: User) {
     try {
-      const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password)
+       this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password)
+       this.navCtrl.push(PersonalityPage);
       }catch (e) {
       console.error(e);
     }
