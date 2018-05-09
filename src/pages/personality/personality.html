@@ -16,80 +16,82 @@
     <div float-left margin-left margin-top text-center>
       <p class="textcolor">personalidad: </p>
     </div>
-    <div float-left>
+    <ion-list radio-group>
+    <div float-left>    
             <ion-item>
               <ion-label>Activo</ion-label>
-              <ion-radio value="Activo"></ion-radio>
+              <ion-radio checked={{activo}} (ionSelect)="Activo($event)"></ion-radio>
             </ion-item>
             <ion-item>
               <ion-label>Ambicioso</ion-label>
-              <ion-radio value="Ambicioso"></ion-radio>
+              <ion-radio checked={{ambicioso}} (ionSelect)="Ambicioso($event)"></ion-radio>
             </ion-item>
             <ion-item>
               <ion-label>Conservador</ion-label>
-              <ion-radio value="Conservador"></ion-radio>
+              <ion-radio  checked={{conservador}} (ionSelect) ="Conservador($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Divertido</ion-label>
-                <ion-radio value="Divertido"></ion-radio>
+                <ion-radio checked={{divertido}} (ionSelect)="Divertido($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Dominante</ion-label>
-                <ion-radio value="Dominante"></ion-radio>
+                <ion-radio checked={{dominante}} (ionSelect)="Dominante($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Egolatra</ion-label>
-                <ion-radio value="Egolatra"></ion-radio>
+                <ion-radio checked={{egolatra}} (ionSelect) ="Egolatra($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Extrovertido</ion-label>
-                <ion-radio value="Extrovertido"></ion-radio>
+                <ion-radio checked={{extrovertido}} (ionSelect)= "Extrovertido($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Mezquino</ion-label>
-                <ion-radio value="Mezquino"></ion-radio>
+                <ion-radio checked={{mezquino}} (ionSelect)="Mezquino($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Negativo</ion-label>
-                <ion-radio value="Negativo"></ion-radio>
+                <ion-radio checked={{negativo}} (ionSelect)="Negativo($event)"></ion-radio>
             </ion-item>
           </div>
           <div float-left>
             <ion-item>
                 <ion-label>Pacifico</ion-label>
-                <ion-radio value="Pacifico"></ion-radio>
+                <ion-radio checked={{pacifico}} (ionSelect)="Pacifico($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Perezoso</ion-label>
-                <ion-radio value="Perezoso"></ion-radio>
+                <ion-radio checked={{perezoso}} (ionSelect)="Perezoso($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Pesimista</ion-label>
-                <ion-radio value="Pesimistra"></ion-radio>
+                <ion-radio checked={{pesimista}} (ionSelect)="Pesimista($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Picaro</ion-label>
-                <ion-radio value="Picaro"></ion-radio>
+                <ion-radio checked={{picaro}} (ionSelect)="Picaro($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Posesivo</ion-label>
-                <ion-radio value="Posesivo"></ion-radio>
+                <ion-radio checked={{posesivo}} (ionSelect)="Posesivo($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Positivo</ion-label>
-                <ion-radio value="Positivo"></ion-radio>
+                <ion-radio checked={{positivo}} (ionSelect)="Positivo($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Reservado</ion-label>
-                <ion-radio value="Reservado"></ion-radio>
+                <ion-radio checked={{reservado}} (ionSelect)="Reservado($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Sensible</ion-label>
-                <ion-radio value="Sensible"></ion-radio>
+                <ion-radio checked={{sensible}} (ionSelect)="Sensible($event)"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Timido</ion-label>
-                <ion-radio value="Timido"></ion-radio>
+                <ion-radio checked={{timido}} (ionSelect)= "Timido($event)"></ion-radio>
             </ion-item>
         </div>
+    </ion-list>
 </ion-content>
