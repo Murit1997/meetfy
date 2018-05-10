@@ -16,7 +16,7 @@ import {App} from 'ionic-angular';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = PersonalityPage;
+  rootPage = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {
