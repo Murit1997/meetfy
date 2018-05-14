@@ -101,8 +101,8 @@ ion-item {
 }
 .center {
   display: block;
-  margin-left: 115px;
   margin-right: auto;
+  float:left;
 }
 
 .button{
@@ -118,12 +118,20 @@ ion-item {
 .textcolor{
   color:white;
   text-align: center;
-  font-size: 23px;
+  font-size: 18px;
 }
 .loginpage{
   margin-bottom:50px; 
 }
 .buttons{
   margin-top:80px;
+}
+.PageButton{
+  float: left;
+  padding-top: 14px;
+  margin-left: 62px;
+}
+.ButtonBlueText{
+  color:blue
 }
 $menu-width: 140px;

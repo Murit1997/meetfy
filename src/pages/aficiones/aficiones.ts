@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the PersonalityPage page.
+ * Generated class for the AficionesPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-personality',
-  templateUrl: 'personality.html',
+  selector: 'page-aficiones',
+  templateUrl: 'aficiones.html',
 })
-export class PersonalityPage {
+export class AficionesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PersonalityPage');
+    console.log('ionViewDidLoad AficionesPage');
   }
-  async nextPage(){
 
-  }
-     
 }
-

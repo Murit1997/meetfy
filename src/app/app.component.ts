@@ -16,8 +16,7 @@ import {App} from 'ionic-angular';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = MainpagePage
-
+  rootPage = PersonalityPage;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
