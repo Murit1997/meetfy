@@ -46,8 +46,8 @@ page-personality {
         }
     }
     .item-radio input:checked + .radio-content .radio-icon:before{
-      color: #fff;
-      background-color: blue;
+      color: black;
+      background-color: black;
       content: "\F122";
     }
 }
@@ -61,5 +61,18 @@ page-personality {
 .radioButtonRight{
   float: right;
   width: 50%;
+}
+.buttonText{
+  text-align: center;
+  font-size: 130%;
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-left: 15px;
+}
+.ButtonBlueText{
+  color:#85D0EC;
+  font-weight:bold;
+  font-size: 14px;
 }
 }

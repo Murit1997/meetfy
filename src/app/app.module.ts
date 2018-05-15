@@ -27,6 +27,7 @@ import { SnowPage } from '../pages/Activities/snow/snow';
 import { SummerPage } from '../pages/Activities/summer/summer';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { PersonalityPage } from '../pages/personality/personality';
+import { AficionesPage } from '../pages/aficiones/aficiones';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { PersonalityPage } from '../pages/personality/personality';
     SnowPage,
     SummerPage,
     CiencePage,
-    PersonalityPage
+    PersonalityPage,
+    AficionesPage
   ],
   imports: [
     BrowserModule,
@@ -76,7 +78,8 @@ import { PersonalityPage } from '../pages/personality/personality';
     SnowPage,
     SummerPage,
     CiencePage,
-    PersonalityPage
+    PersonalityPage,
+    AficionesPage
   ],
   providers: [
     StatusBar,

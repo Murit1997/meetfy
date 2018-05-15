@@ -102,9 +102,11 @@ ion-item {
 .center {
   display: block;
   margin-right: auto;
-  float:left;
 }
-
+.center1{
+  display: block;
+  margin-right: auto;
+}
 .button{
   margin-top:67px;
 }
@@ -128,10 +130,8 @@ ion-item {
 }
 .PageButton{
   float: left;
-  padding-top: 14px;
-  margin-left: 62px;
-}
-.ButtonBlueText{
-  color:blue
+  padding-top: 40px;
+  margin-left: 100px;
+
 }
 $menu-width: 140px;

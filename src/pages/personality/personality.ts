@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AficionesPage } from '../aficiones/aficiones';
 
 /**
  * Generated class for the PersonalityPage page.
@@ -22,7 +23,7 @@ export class PersonalityPage {
     console.log('ionViewDidLoad PersonalityPage');
   }
   async nextPage(){
-
+    this.navCtrl.push(AficionesPage);
   }
      
 }

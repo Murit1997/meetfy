@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LoginPage } from '../Login/login';
 
 /**
  * Generated class for the AficionesPage page.
@@ -21,5 +22,7 @@ export class AficionesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AficionesPage');
   }
-
+async nextPage(){
+  this.navCtrl.push(LoginPage);
+}
 }
