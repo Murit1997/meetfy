@@ -35,15 +35,15 @@
     <ion-item center>
       <ion-input type="password" placeholder="Repite Contraseña" [(ngModel)]="user.password"></ion-input>
     </ion-item>
-  </div>
-  <div class="textlabel" margin-left>
-      <ion-item>
-        <ion-input type="text" placeholder="sexo" [(ngModel)]="profile.Sex"></ion-input>
-      </ion-item>
-    </div>
+  </div> 
     <div class="textlabel" margin-left>
-        <ion-item>
-          <ion-input type="text" placeholder="ciudad" [(ngModel)]="profile.City"></ion-input>
+      <ion-item>
+        <ion-label><p class="textColor">Sexo</p></ion-label>
+        <ion-select [(ngModel)]="Sexo">
+            <ion-option value="Hombre">Hombre</ion-option>
+            <ion-option value="Mujer">Mujer</ion-option>
+            <ion-option value="Otro">Otro</ion-option>
+        </ion-select>
         </ion-item>
       </div>
   <div class="buttondiv">
