@@ -16,6 +16,7 @@ import {
   MarkerOptions,
   Marker
 } from '@ionic-native/google-maps';
+import { CreateEventPage } from '../../create-event/create-event';
 @IonicPage()
 @Component({
   selector: 'page-movie',
@@ -74,6 +75,9 @@ export class MoviePage {
     .catch(error =>{
       console.log(error);
     });
+  }
+  createEvent(){
+    this.navCtrl.push(CreateEventPage)
   }
 
 }

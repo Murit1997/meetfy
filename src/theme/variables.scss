@@ -125,9 +125,6 @@ ion-item {
 .loginpage{
   margin-bottom:50px; 
 }
-.buttons{
-  margin-top:80px;
-}
 .PageButton{
   float: left;
   padding-top: 40px;
@@ -135,3 +132,6 @@ ion-item {
 
 }
 $menu-width: 140px;
+.buttons{
+  background-color: transparent!important;
+}

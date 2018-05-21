@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CreateEventPage } from '../../create-event/create-event';
+import { MainpagePage } from '../mainpage/mainpage';
 
 /**
- * Generated class for the SnowPage page.
+ * Generated class for the CreateEventPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +11,19 @@ import { CreateEventPage } from '../../create-event/create-event';
 
 @IonicPage()
 @Component({
-  selector: 'page-snow',
-  templateUrl: 'snow.html',
+  selector: 'page-create-event',
+  templateUrl: 'create-event.html',
 })
-export class SnowPage {
+export class CreateEventPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SnowPage');
+    console.log('ionViewDidLoad CreateEventPage');
   }
-  createEvent(){
-    this.navCtrl.push(CreateEventPage)
+  nextPage(){
+    this.navCtrl.push(MainpagePage);
   }
 
 }

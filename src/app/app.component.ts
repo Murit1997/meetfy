@@ -12,11 +12,13 @@ import { HttpClientModule } from '@angular/common/http'
 import { HttpModule } from '@angular/http';
 import { MainpagePage } from '../pages/mainpage/mainpage';
 import {App} from 'ionic-angular';
+import { AficionesPage } from '../pages/aficiones/aficiones';
+import { CreateEventPage } from '../pages/create-event/create-event';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = LoginPage;
+  rootPage = CreateEventPage
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

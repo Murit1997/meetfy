@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CreateEventPage } from '../../create-event/create-event';
 
 /**
  * Generated class for the SummerPage page.
@@ -20,6 +21,9 @@ export class SummerPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SummerPage');
+  }
+  createEvent(){
+    this.navCtrl.push(CreateEventPage)
   }
 
 }

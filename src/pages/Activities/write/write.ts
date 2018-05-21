@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CreateEventPage } from '../../create-event/create-event';
 
 /**
  * Generated class for the WritePage page.
@@ -20,6 +21,9 @@ export class WritePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WritePage');
+  }
+  createEvent(){
+    this.navCtrl.push(CreateEventPage)
   }
 
 }

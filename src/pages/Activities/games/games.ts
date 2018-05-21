@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CreateEventPage } from '../../create-event/create-event';
 
 /**
  * Generated class for the GamesPage page.
@@ -20,6 +21,9 @@ export class GamesPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GamesPage');
+  }
+  createEvent(){
+    this.navCtrl.push(CreateEventPage)
   }
 
 }

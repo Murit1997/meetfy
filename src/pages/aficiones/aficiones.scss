@@ -1,78 +1,78 @@
 page-aficiones {
-    .item.item-input {
-        background-color:#F48B8A;
-      }
-      .center1 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        float: left;
+  .item.item-input {
+    background-color:#F48B8A;
+  }
+  .center1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
 
-      }
-      .buttondiv{
-          text-align: center;
-      }
-      .text-input::-moz-placeholder {
-        color: white;
-        
-      }
-      
-      .text-input:-ms-input-placeholder {
-        color: white;
-      }
-      
-      .text-input::-webkit-input-placeholder {
-        text-indent: 0;
-        color: white;
-      }
-      .radio-icon{  visibility: visible!important;}
+  }
+  .buttondiv{
+      text-align: center;
+  }
+  .text-input::-moz-placeholder {
+    color: white;
+    
+  }
+  
+  .text-input:-ms-input-placeholder {
+    color: white;
+  }
+  
+  .text-input::-webkit-input-placeholder {
+    text-indent: 0;
+    color: white;
+  }
+  .radio-icon{  visibility: visible!important;}
 
 .radio-wrapper {
-    display: inline-flex;
-    margin-bottom:20px;
-    .item-radio {
-        border: medium none;
+display: inline-flex;
+margin-bottom:20px;
+.item-radio {
+    border: medium none;
+    width: 24px;
+    .radio-icon {
+      padding: 0;
+    }
+    .radio-icon:before{
+        content: "";
+        border:1px solid black;
         width: 24px;
-        .radio-icon {
-          padding: 0;
-        }
-        .radio-icon:before{
-            content: "";
-            border:1px solid black;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            overflow:hidden;
-        }
+        height: 24px;
+        border-radius: 50%;
+        overflow:hidden;
     }
-    .item-radio input:checked + .radio-content .radio-icon:before{
-      color: black;
-      background-color: black;
-      content: "\F122";
-    }
+}
+.item-radio input:checked + .radio-content .radio-icon:before{
+  color: black;
+  background-color: black;
+  content: "\F122";
+}
 }
 .radio-button{
-  width: 50%;
-  float: left;
+width: 50%;
+float: left;
 }
 .radioButton{
-  margin-top: 15px;
+margin-top: 15px;
 }
 .radioButtonRight{
-  float: right;
-  width: 50%;
+float: right;
+width: 50%;
 }
 .buttonText{
-    text-align: center;
-    font-size: 130%;
-    color: white;
-    font-weight: bold;
-    float: left;
-    margin-left: 15px;
+text-align: center;
+font-size: 130%;
+color: white;
+font-weight: bold;
+float: left;
+margin-left: 15px;
 }
 .ButtonBlueText{
-  color:#85D0EC;
-  font-weight:bold;
-  font-size: 14px;
+color:#85D0EC;
+font-weight:bold;
+font-size: 14px;
 }
 }

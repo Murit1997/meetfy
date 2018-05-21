@@ -28,6 +28,7 @@ import { SummerPage } from '../pages/Activities/summer/summer';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { PersonalityPage } from '../pages/personality/personality';
 import { AficionesPage } from '../pages/aficiones/aficiones';
+import { CreateEventPage } from '../pages/create-event/create-event';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { AficionesPage } from '../pages/aficiones/aficiones';
     SummerPage,
     CiencePage,
     PersonalityPage,
-    AficionesPage
+    AficionesPage,
+    CreateEventPage
   ],
   imports: [
     BrowserModule,
@@ -79,7 +81,8 @@ import { AficionesPage } from '../pages/aficiones/aficiones';
     SummerPage,
     CiencePage,
     PersonalityPage,
-    AficionesPage
+    AficionesPage,
+    CreateEventPage
   ],
   providers: [
     StatusBar,
