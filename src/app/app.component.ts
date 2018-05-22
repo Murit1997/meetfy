@@ -18,7 +18,7 @@ import { CreateEventPage } from '../pages/create-event/create-event';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = LoginPage
+  rootPage = PersonalityPage
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
