@@ -31,17 +31,11 @@
                     <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="Dia"></ion-datetime>
                   </ion-item>
                 </div>
-           <div class="textlabel" margin-left>
-             <ion-item>
-               <ion-label>Tipo de Evento</ion-label>
-              <ion-select [(ngModel)]="Tipo">
-                  <ion-option value="Musica">Musica</ion-option>
-                  <ion-option value="Playa">Playa</ion-option>
-                  <ion-option value="Bar">Bar</ion-option>
-                  <ion-option value="Ciencia">Ciencia</ion-option>
-              </ion-select>
-              </ion-item>
-          </div>
+                <div class="textlabel" margin-left>
+                    <ion-item>
+                        <ion-input type="text" placeholder="Lugar"></ion-input>
+                      </ion-item>
+                    </div>
           <div class="PageButton">
               <button ion-button round color="light" (click) ="nextPage()"><p class="ButtonBlueText">Crea el evento</p></button>
      </div>

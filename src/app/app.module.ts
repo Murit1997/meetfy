@@ -29,6 +29,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
 import { PersonalityPage } from '../pages/personality/personality';
 import { AficionesPage } from '../pages/aficiones/aficiones';
 import { CreateEventPage } from '../pages/create-event/create-event';
+import { ListEventsPage } from '../pages/list-events/list-events';
+import { DreamTheaterPage } from '../pages/dream-theater/dream-theater';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import { CreateEventPage } from '../pages/create-event/create-event';
     CiencePage,
     PersonalityPage,
     AficionesPage,
-    CreateEventPage
+    CreateEventPage,
+    ListEventsPage,
+    DreamTheaterPage
   ],
   imports: [
     BrowserModule,
@@ -82,7 +86,9 @@ import { CreateEventPage } from '../pages/create-event/create-event';
     CiencePage,
     PersonalityPage,
     AficionesPage,
-    CreateEventPage
+    CreateEventPage,
+    ListEventsPage,
+    DreamTheaterPage
   ],
   providers: [
     StatusBar,

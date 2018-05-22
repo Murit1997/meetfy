@@ -14,11 +14,14 @@ import { MainpagePage } from '../pages/mainpage/mainpage';
 import {App} from 'ionic-angular';
 import { AficionesPage } from '../pages/aficiones/aficiones';
 import { CreateEventPage } from '../pages/create-event/create-event';
+import { ListEventsPage } from '../pages/list-events/list-events';
+import { DreamTheaterPage } from '../pages/dream-theater/dream-theater';
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = PersonalityPage
+  rootPage = DreamTheaterPage
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private app:App) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
